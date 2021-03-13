@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // ax^2+bx+c=0
+    var a = +prompt('Nhập giá trị của a');
+    var b = +prompt('Nhập giá trị của b');
+    var c = +prompt('Nhập giá trị của c');
+    var delta = b*b - 4*a*c;
+      var x = -c/b;
+    var x1 = (-b+Math.sqrt(delta))/(2*a);
+    var x2 = (-b-Math.sqrt(delta))/(2*a);
+    var s = -b/2*a;
+
+      if (a == 0 && b== 0 && c== 0){
+alert('phương trình vô số nghiệm');
+
+      } else if (a == 0 && b== 0 && c !==0){
+          alert('phương trình vô nghiệm');
+
+      }
+      else if ( a == 0 && b !== 0 && c !== 0){
+          alert('phương trình có nghiệm là ' + x);
+
+      }else{
+          if (delta >0){
+              alert(' phương trình có nghiệm thứ 1 là: '+ x1);
+              alert('phương trình có nghiệm thứ 2 là: '+ x2);
+
+          }
+          else if(delta == 0){
+              alert( 'phương trình có nghiệm là ' +s);
+
+          }else{
+              alert('phương trình vô nghiệm');
+          }
+      }
+
+
+
+
+
+
+
+</script>
+</html>

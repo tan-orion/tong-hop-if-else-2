@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="dien"></p>
+</body>
+<script>
+     var a = parseInt(prompt('chỉ số điện'));
+ var giatien;
+     /* Bậc 1: Cho kWh từ 0 – 50	1.678
+    Bậc 2: Cho kWh từ 51 – 100	1.734
+    Bậc 3: Cho kWh từ 101 – 200	2.014
+    Bậc 4: Cho kWh từ 201 – 300	2.536
+    Bậc 5: Cho kWh từ 301 – 400	2.834
+    Bậc 6: Cho kWh từ 401 trở lên	2.927
+*/
+     if (a == 0 && a == 50 ){
+         giatien= a* 1.678;
+     }
+     else if ( a == 51 && a == 100 ){
+         giatien= a * 1.734;
+     }
+     else if(a == 101 && a == 200 ){
+         giatien= a * 2.014;
+     }
+     else if ( a == 201 && a == 300){
+         giatien= a * 2.536;
+     }
+     else if ( a == 301 && a == 400 ){
+         giatien= a * 2.834;
+     }
+     else {
+         giatien= a* 2.927;
+     }
+     document.getElementById('dien').innerHTML="tiền điện " +giatien;
+</script>
+</html>
